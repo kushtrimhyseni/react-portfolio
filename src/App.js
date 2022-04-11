@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from "./components/header/Header";
+import Banner from "./components/Banner";
+import About from "./components/About";
+import { useState } from "react";
+import Skills from "./components/Skills";
+import ScrollToTop from "./components/ScrollToTop";
+import Resume from "./components/Resume";
 function App() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="flex flex-col lg:flex-row">
+        <Header menuOpen={isMenuOpen} />
+        <div className="w-full">
+          <Banner setOpen={setMenuOpen} menuOpen={isMenuOpen} />
+          <About />
+        </div>
+      </div>
+      <Skills />
+      <Resume />
+      <ScrollToTop />
+    </>
   );
 }
 
