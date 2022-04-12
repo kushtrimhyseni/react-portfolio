@@ -16,7 +16,7 @@ const Header = ({ menuOpen }) => {
         className="w-[120px] h-[120px] rounded-full border-8 border-[#2c2f3f]"
       />
       <h1 className="text-white-900 flex justify-center items-center font-bold text-2xl mt-2">
-        Kushtrim Hyseni - Rreli
+        Kushtrim Hyseni
       </h1>
       <Socials />
       <NavMenu />;
