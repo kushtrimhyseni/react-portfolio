@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLockOpen, FaLock } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 const Banner = ({ menuOpen, setOpen }) => {
   const toggleMenu = () => {
@@ -28,8 +29,18 @@ const Banner = ({ menuOpen, setOpen }) => {
       <h1 className="absolute z-10 text-4xl lg:text-6xl font-bold text-white-900 left-[40px] lg:left-1/3 top-1/3 font-raleway">
         Kushtrim Hyseni
       </h1>
-      <span className="absolute z-10 text-2xl font-medium text-white-900 left-[40px] lg:left-1/3 freelance-span font-raleway">
-        I'm
+      <span className="absolute z-10 text-2xl font-medium text-white-900 left-[40px] lg:left-1/3 flex freelance-span font-raleway">
+        <span className="mr-2">I'm</span>
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Freelancer")
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("Developer")
+              .start();
+          }}
+        />
       </span>
     </div>
   );
