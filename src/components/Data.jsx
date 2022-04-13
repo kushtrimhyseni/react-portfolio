@@ -63,16 +63,19 @@ export const about = [
 
 export const skills = [
   {
+    id: 1,
     lang: "HTML",
     skill: 100,
     progress: <ProgressBar bgcolor="#149DDD" progress="100" height={10} />,
   },
   {
+    id: 2,
     lang: "CSS",
     skill: 80,
     progress: <ProgressBar bgcolor="#149DDD" progress="80" height={10} />,
   },
   {
+    id: 3,
     lang: "Javascript",
     skill: 70,
     progress: <ProgressBar bgcolor="#149DDD" progress="70" height={10} />,
@@ -81,16 +84,19 @@ export const skills = [
 
 export const skillsright = [
   {
+    id: 1,
     lang: "PHP",
     skill: 50,
     progress: <ProgressBar bgcolor="#149DDD" progress="50" height={10} />,
   },
   {
+    id: 2,
     lang: "WORDPRES/CMS",
     skill: 80,
     progress: <ProgressBar bgcolor="#149DDD" progress="80" height={10} />,
   },
   {
+    id: 3,
     lang: "Photoshop",
     skill: 20,
     progress: <ProgressBar bgcolor="#149DDD" progress="20" height={10} />,
