@@ -9,7 +9,7 @@ const SkillsProgresBar = () => {
       <div className="w-full">
         {skills.map((skill) => {
           return (
-            <div className="flex flex-col pb-2">
+            <div className="flex flex-col pb-2" key={skill.id}>
               <div className="flex justify-between items-center">
                 <span className="uppercase block font-semibold text-black">
                   {skill.lang}
@@ -26,7 +26,7 @@ const SkillsProgresBar = () => {
       <div className="w-full">
         {skillsright.map((skill) => {
           return (
-            <div className="flex flex-col pb-2">
+            <div className="flex flex-col pb-2" key={skill.id}>
               <div className="flex justify-between items-center">
                 <span className="uppercase block font-semibold text-black">
                   {skill.lang}
