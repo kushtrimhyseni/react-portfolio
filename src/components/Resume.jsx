@@ -22,15 +22,15 @@ const Resume = () => {
           const starlabs = info.currentjob.trim().split(".");
           const gentli = info.gentli.trim().split(".");
           return (
-            <div class="container">
-              <div class="section-title">
+            <div className="container">
+              <div className="section-title">
                 <h2>Resume</h2>
                 <p>{info.intro}</p>
               </div>
-              <div class="flex flex-col lg:flex-row gap-4">
-                <div class="w-full" data-aos="fade-up">
-                  <h3 class="resume-title">Sumary</h3>
-                  <div class="resume-item pb-0">
+              <div className="flex flex-col lg:flex-row gap-4">
+                <div className="w-full" data-aos="fade-up">
+                  <h3 className="resume-title">Sumary</h3>
+                  <div className="resume-item pb-0">
                     <h4>Kushtrim Hyseni</h4>
                     <p>
                       <em>{info.about}</em>
@@ -41,8 +41,8 @@ const Resume = () => {
                       <li>{info.email}</li>
                     </ul>
                   </div>
-                  <h3 class="resume-title">Education</h3>
-                  <div class="resume-item">
+                  <h3 className="resume-title">Education</h3>
+                  <div className="resume-item">
                     <h4>Master of Computer Science &amp; Engineering</h4>
                     <h5>SEP 2019 - CURRENT</h5>
                     <p>
@@ -50,7 +50,7 @@ const Resume = () => {
                     </p>
                     <p className="mt-2">{info.abouteducation}</p>
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>Bachelor of of Computer Science &amp; Engineering</h4>
                     <h5>2010 - 2016</h5>
                     <p>
@@ -58,7 +58,7 @@ const Resume = () => {
                     </p>
                     <p className="mt-2">{info.abouteducation}</p>
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>Mobile Application &amp; Technology</h4>
                     <h5>OCT 2019 - JAN 2020</h5>
                     <p>
@@ -66,7 +66,7 @@ const Resume = () => {
                     </p>
                     <p className="mt-2">{info.abouteducation}</p>
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>
                       CCNA Discovery:Networking for Home &amp; Small Business
                     </h4>
@@ -77,9 +77,9 @@ const Resume = () => {
                     <p className="mt-2">{info.abouteducation}</p>
                   </div>
                 </div>
-                <div class="w-full" data-aos="fade-up" data-aos-delay="100">
-                  <h3 class="resume-title">Professional Experience</h3>
-                  <div class="resume-item">
+                <div className="w-full" data-aos="fade-up" data-aos-delay="100">
+                  <h3 className="resume-title">Professional Experience</h3>
+                  <div className="resume-item">
                     <h4>Web Developer Front/Back End</h4>
                     <h5>2020 - Present</h5>
                     <p>
@@ -91,7 +91,7 @@ const Resume = () => {
                       })}
                     </ul>
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>Chief of Logistics</h4>
                     <h5>2016 - 2019</h5>
                     <p>
@@ -103,7 +103,7 @@ const Resume = () => {
                       })}
                     </ul>
                   </div>
-                  <div class="resume-item">
+                  <div className="resume-item">
                     <h4>RECOMMENDATIONS</h4>
                     <ul>
                       <li className="mt-2">{info.starlabsceo}</li>

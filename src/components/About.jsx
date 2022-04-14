@@ -17,7 +17,7 @@ const About = () => {
         <img
           src="https://i.ibb.co/2dGQVGW/profile-img.webp"
           alt="Profile"
-          className="max-w-[350px] max-h-[350px] object-cover"
+          className="w-full lg:max-w-[350px] max-h-[350px] object-cover"
         />
         <div className="flex flex-col pt-6 lg:pt-0 lg:pl-6">
           <h3 className="font-bold text-2xl text-blue-900 font-raleway">
