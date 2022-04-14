@@ -89,7 +89,6 @@ const ContactForm = () => {
             <NavLink
               className="ml-2 text-[#a8a9b5] hover:text-white-900 font-opensans text-md font-normal cursor-pointer"
               to="/"
-              exact
             >
               Back to HOMEPAGE
             </NavLink>
