@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Resume from "./components/Resume";
 import ContactForm from "./components/pages/ContactForm";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Portfolio from "./components/Portfolio";
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
@@ -22,6 +23,7 @@ function App() {
                 <About />
                 <Skills />
                 <Resume />
+                <Portfolio />
                 <ScrollToTop />
               </>
             }
