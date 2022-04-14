@@ -1,10 +1,4 @@
-import {
-  FaHome,
-  FaUserAlt,
-  FaRegClipboard,
-  FaFile,
-  FaRegEnvelope,
-} from "react-icons/fa";
+import { FaHome, FaUserAlt, FaRegClipboard, FaFile } from "react-icons/fa";
 import ProgressBar from "./ProgressBar";
 export const navItems = [
   {
@@ -27,11 +21,11 @@ export const navItems = [
     name: "Portfolio",
     icon: <FaFile color="white" size={20} className="cursor-pointer" />,
   },
-  {
-    id: 5,
-    name: "Contact",
-    icon: <FaRegEnvelope color="white" size={20} className="cursor-pointer" />,
-  },
+  // {
+  //   id: 5,
+  //   name: "Contact",
+  //   icon: ,
+  // },
 ];
 
 export const personalInformation = {
