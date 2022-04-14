@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../pages/ContactForm.css";
+import { NavLink } from "react-router-dom";
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
@@ -81,6 +82,17 @@ const ContactForm = () => {
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="btn btn-two">
+            <NavLink
+              className="ml-2 text-[#a8a9b5] hover:text-white-900 font-opensans text-md font-normal cursor-pointer"
+              to="/"
+              exact
+            >
+              Back to HOMEPAGE
+            </NavLink>
           </div>
         </div>
       </div>
