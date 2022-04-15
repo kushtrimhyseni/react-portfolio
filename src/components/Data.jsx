@@ -103,6 +103,22 @@ export const resume = {
 };
 
 export const projects = [
-  { id: 1, src: "/public/assets/images/prowoman.png" },
-  { id: 2, src: "/public/assets/images/regalrentals.png" },
+  {
+    id: 1,
+    name: "PROWOMAN KS",
+    desc: "NGO - on-governmental organization for women.",
+    src: "https://i.ibb.co/DrJBLcF/prowoman.png",
+  },
+  {
+    id: 2,
+    name: "Regal Rentals",
+    desc: "Swiss Rent a Car company based in Laussane, VAUD.",
+    src: "https://i.ibb.co/Y8YnxQV/amc-logo-1.png",
+  },
+  {
+    id: 2,
+    name: "AMC STORE",
+    desc: "Online Shopping Platform with integreated Card Module for payments.",
+    src: "https://i.ibb.co/r28n4L5/project-2.jpg",
+  },
 ];
