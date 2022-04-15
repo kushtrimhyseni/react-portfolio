@@ -17,12 +17,15 @@ const Resume = () => {
   };
   return (
     <div>
-      <section id="resume" className="resume max-w-[1140px] mx-auto p-6">
+      <section
+        id="resume"
+        className="resume max-w-[1140px] mx-auto p-6 md:p-0 mt-4"
+      >
         {resume.map((info) => {
           const starlabs = info.currentjob.trim().split(".");
           const gentli = info.gentli.trim().split(".");
           return (
-            <div className="container">
+            <div className="container p-6 md:p-0">
               <div className="section-title">
                 <h2>Resume</h2>
                 <p>{info.intro}</p>
