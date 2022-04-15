@@ -3,9 +3,9 @@ import "./ContactForm.css";
 import { Link } from "react-router-dom";
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
-  // const [nameInput, setNameInput] = useState("");
-  // const [emailInput, setEmailInput] = useState("");
-  // const [messageInput, setMessageInput] = useState("");
+  const firstInput = useRef(null);
+  const secondInput = useRef(null);
+  const thirdInput = useRef(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,7 +25,9 @@ const ContactForm = () => {
       body: JSON.stringify(details),
     });
     setStatus("Submit");
-    console.log(details);
+    firstInput.current.value = "";
+    secondInput.current.value = "";
+    thirdInput.current.value = "";
     let result = await response.json();
     alert(result.status);
   };
@@ -57,6 +59,7 @@ const ContactForm = () => {
               <form className="app-form" onSubmit={handleSubmit}>
                 <div className="app-form-group">
                   <input
+                    ref={firstInput}
                     type="text"
                     id="name"
                     className="app-form-control"
@@ -66,6 +69,7 @@ const ContactForm = () => {
                 </div>
                 <div className="app-form-group">
                   <input
+                    ref={secondInput}
                     type="email"
                     id="email"
                     className="app-form-control"
@@ -75,6 +79,7 @@ const ContactForm = () => {
                 </div>
                 <div className="app-form-group message">
                   <input
+                    ref={thirdInput}
                     id="message"
                     className="app-form-control"
                     placeholder="MESSAGE"
