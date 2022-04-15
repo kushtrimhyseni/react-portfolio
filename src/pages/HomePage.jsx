@@ -11,12 +11,14 @@ const HomePage = () => {
   return (
     <>
       <Header menuOpen={isMenuOpen} />
-      <Banner setOpen={setMenuOpen} menuOpen={isMenuOpen} />
-      <About />
-      <Skills />
-      <Resume />
-      <Portfolio />
-      <ScrollToTop />
+      <div className="pl-0 lg:pl-[300px]">
+        <Banner setOpen={setMenuOpen} menuOpen={isMenuOpen} />
+        <About />
+        <Skills />
+        <Resume />
+        <Portfolio />
+        <ScrollToTop />
+      </div>
     </>
   );
 };
