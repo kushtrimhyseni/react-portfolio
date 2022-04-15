@@ -1,11 +1,16 @@
-import React, { useState } from "react";
-import "../pages/ContactForm.css";
-import { NavLink } from "react-router-dom";
+import React, { useState, useRef } from "react";
+import "./ContactForm.css";
+import { Link } from "react-router-dom";
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
+  // const [nameInput, setNameInput] = useState("");
+  // const [emailInput, setEmailInput] = useState("");
+  // const [messageInput, setMessageInput] = useState("");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
+
     const { name, email, message } = e.target.elements;
     let details = {
       name: name.value,
@@ -20,6 +25,7 @@ const ContactForm = () => {
       body: JSON.stringify(details),
     });
     setStatus("Submit");
+    console.log(details);
     let result = await response.json();
     alert(result.status);
   };
@@ -84,14 +90,14 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div class="box-2">
-          <div class="btn btn-two">
-            <NavLink
+        <div className="box-2">
+          <div className="btn btn-two">
+            <Link
               className="ml-2 text-[#a8a9b5] hover:text-white-900 font-opensans text-md font-normal cursor-pointer"
               to="/"
             >
               Back to HOMEPAGE
-            </NavLink>
+            </Link>
           </div>
         </div>
       </div>
