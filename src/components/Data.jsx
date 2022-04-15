@@ -116,7 +116,7 @@ export const projects = [
     src: "https://i.ibb.co/Y8YnxQV/amc-logo-1.png",
   },
   {
-    id: 2,
+    id: 3,
     name: "AMC STORE",
     desc: "Online Shopping Platform with integreated Card Module for payments.",
     src: "https://i.ibb.co/r28n4L5/project-2.jpg",

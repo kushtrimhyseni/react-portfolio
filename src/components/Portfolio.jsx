@@ -16,12 +16,14 @@ const Portfolio = () => {
         <div className="p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           {projects.map((project) => {
             return (
-              <div className="rounded overflow-hidden shadow-lg">
+              <div
+                className="rounded overflow-hidden shadow-lg"
+                key={project.id}
+              >
                 <img
                   className="w-full h-[230px]"
                   src={project.src}
                   alt="Mountain"
-                  key={project.id}
                 />
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">{project.name}</div>
