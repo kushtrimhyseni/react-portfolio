@@ -25,7 +25,7 @@ const Portfolio = () => {
                     <div className="flex items-center space-x-2">
                       <img
                         src={project.src}
-                        alt=""
+                        alt="Client"
                         className="object-cover object-center w-8 h-8 rounded-full shadow-sm bg-coolGray-500 border-coolGray-700"
                       />
                       <div className="-space-y-1">
@@ -51,7 +51,7 @@ const Portfolio = () => {
                   </div>
                   <img
                     src={project.src}
-                    alt=""
+                    alt="Client"
                     className="object-cover object-center w-full h-72 bg-coolGray-500"
                   />
                   <div className="p-3">
