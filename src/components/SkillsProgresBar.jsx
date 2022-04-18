@@ -3,7 +3,7 @@ import { skills, skillsright } from "./Data";
 const SkillsProgresBar = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row w-full justify-between gap-2 lg:gap-10 mt-6"
+      className="flex flex-col w-full justify-start gap-2 lg:gap-10 mt-6 p-4"
       id="skills"
     >
       <div className="w-full">

@@ -19,7 +19,7 @@ const Header = ({ menuOpen }) => {
         Kushtrim Hyseni
       </h1>
       <Socials />
-      <NavMenu />;
+      <NavMenu />
     </div>
   );
 };
