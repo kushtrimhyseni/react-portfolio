@@ -3,8 +3,8 @@ import PersonalInformation from "./PersonalInformation";
 import { about } from "./Data";
 const About = () => {
   return (
-    <div class="max-w-[1140px] mx-auto mockup-window border border-slate-200 bg-base-300 mt-12 mb-12">
-      <div class="flex justify-center px-4 py-4 bg-white-900">
+    <div className="max-w-[1140px] mx-auto mockup-window border border-slate-200 bg-base-300 mt-12 mb-12">
+      <div className="flex justify-center px-4 py-4 bg-white-900">
         <div
           className="flex flex-col justify-center max-w-[1140px] overflow-hidden mx-auto z-10"
           id="about"

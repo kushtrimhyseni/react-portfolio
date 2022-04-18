@@ -3,12 +3,12 @@ import SkillsProgresBar from "./SkillsProgresBar";
 
 const Skills = () => {
   return (
-    <div class="hero bg-[#f5f8fd] max-w-[1140px] mx-auto shadow-md rounded-lg">
-      <div class="hero-content flex-col-reverse lg:flex-row-reverse">
-        <div class="mockup-phone border-primary">
-          <div class="camera"></div>
-          <div class="display">
-            <div class="artboard artboard-demo phone-1">
+    <div className="hero bg-[#f5f8fd] max-w-[1140px] mx-auto shadow-md rounded-lg">
+      <div className="hero-content flex-col-reverse lg:flex-row-reverse">
+        <div className="mockup-phone border-primary">
+          <div className="camera"></div>
+          <div className="display">
+            <div className="artboard artboard-demo phone-1">
               <SkillsProgresBar />
             </div>
           </div>

@@ -2,19 +2,19 @@ import React from "react";
 import "../css/portfolio.css";
 import { useState, useEffect } from "react";
 import { db } from "../firebase-config";
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 const Resume = () => {
   const [resume, setResume] = useState([]);
   const resumeRef = collection(db, "resume");
   useEffect(() => {
+    const getDataFromResume = async () => {
+      const resumeData = await getDocs(resumeRef);
+      setResume(resumeData.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
     getDataFromResume();
   }, []);
 
-  const getDataFromResume = async () => {
-    const resumeData = await getDocs(resumeRef);
-    setResume(resumeData.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-  };
   return (
     <div>
       <section
