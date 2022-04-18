@@ -10,7 +10,7 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/contact" element={<ContactForm />}></Route>
           <Route path="/notfound" element={<NotFound />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
     </>
