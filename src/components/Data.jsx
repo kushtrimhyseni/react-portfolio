@@ -108,20 +108,20 @@ export const projects = [
     name: "PROWOMAN KS",
     desc: "NGO - on-governmental organization for women.",
     based: "Prishtinë",
-    src: "https://i.ibb.co/DrJBLcF/prowoman.png",
+    src: "/assets/images/prowoman.webp",
   },
   {
     id: 2,
     name: "Regal Rentals",
     desc: "Swiss Rent a Car company based in Laussane, VAUD.",
     based: "Lausanne, VAUD",
-    src: "https://i.ibb.co/r28n4L5/project-2.jpg",
+    src: "/assets/images/project-2.webp",
   },
   {
     id: 3,
     name: "AMC STORE",
     desc: "Online Shopping Platform with integreated Card Module for payments.",
     based: "Prishtinë",
-    src: "https://i.ibb.co/Y8YnxQV/amc-logo-1.png",
+    src: "/assets/images/amc-logo-1.webp",
   },
 ];
