@@ -28,7 +28,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          className="fixed right-[15px] bottom-[32px] cursor-pointer"
+          className="fixed right-[15px] bottom-[75px] cursor-pointer"
         >
           <FaArrowCircleUp color="#149DDD" size={32} />
         </div>

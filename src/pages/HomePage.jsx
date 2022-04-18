@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import ScrollToTop from "../components/ScrollToTop";
 import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
+import Footer from "../components/Footer";
 const HomePage = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         <Resume />
         <Portfolio />
         <ScrollToTop />
+        <Footer />
       </div>
     </>
   );
