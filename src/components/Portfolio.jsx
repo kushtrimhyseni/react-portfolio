@@ -3,7 +3,7 @@ import { projects } from "./Data";
 const Portfolio = () => {
   return (
     <div>
-      <section id="portfolio" className="max-w-[1140px] mx-auto p-6 md:p-0">
+      <section id="portfolio" className="max-w-[1140px] mx-auto p-6 lg:p-0">
         <div className="section-title">
           <h2>Portfolio</h2>
           <p>

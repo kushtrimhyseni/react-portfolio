@@ -19,7 +19,7 @@ const About = () => {
             <img
               src="https://i.ibb.co/2dGQVGW/profile-img.webp"
               alt="Profile"
-              className="w-full lg:max-w-[350px] max-h-[350px] object-cover"
+              className="w-full lg:w-[350px] h-[350px] object-contain mt-4"
             />
             <div className="flex flex-col pt-6 lg:pt-0 lg:pl-6">
               <h3 className="font-bold text-2xl text-blue-900 font-raleway">
