@@ -6,8 +6,9 @@ import { collection, getDocs } from "firebase/firestore";
 
 const Resume = () => {
   const [resume, setResume] = useState([]);
-  const resumeRef = collection(db, "resume");
+
   useEffect(() => {
+    const resumeRef = collection(db, "resume");
     const getDataFromResume = async () => {
       const resumeData = await getDocs(resumeRef);
       setResume(resumeData.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
