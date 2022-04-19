@@ -6,17 +6,15 @@ import ScrollToTop from "../components/ScrollToTop";
 import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
-const Banner = lazy(() => import("../components/Banner"));
 const HomePage = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <Header menuOpen={isMenuOpen} />
       <div className="pl-0 lg:pl-[300px]">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Banner setOpen={setMenuOpen} menuOpen={isMenuOpen} />
-        </Suspense>
+        <Banner setOpen={setMenuOpen} menuOpen={isMenuOpen} />
         <About />
         <Skills />
         <Resume />
