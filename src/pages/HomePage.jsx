@@ -1,4 +1,4 @@
-import React, { useState, Suspense, lazy } from "react";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import About from "../components/About";
 import Skills from "../components/Skills";
