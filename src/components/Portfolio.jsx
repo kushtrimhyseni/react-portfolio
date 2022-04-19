@@ -13,7 +13,7 @@ const Portfolio = () => {
             fugiat sit in iste officiis commodi quidem hic quas.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2 items-center">
           {projects.map((project) => {
             return (
               <div
@@ -26,7 +26,7 @@ const Portfolio = () => {
                       <img
                         src={project.src}
                         alt="Client"
-                        className="object-cover object-center w-8 h-8 rounded-full shadow-sm bg-coolGray-500 border-coolGray-700"
+                        className="w-8 h-8 rounded-full shadow-sm bg-coolGray-500 border-coolGray-700"
                       />
                       <div className="-space-y-1">
                         <h2 className="text-sm font-semibold leading-none">
@@ -52,7 +52,7 @@ const Portfolio = () => {
                   <img
                     src={project.src}
                     alt="Client"
-                    className="object-cover object-center w-full h-72 bg-coolGray-500"
+                    className="w-full h-72 bg-coolGray-500"
                   />
                   <div className="p-3">
                     <div className="flex items-center justify-between">
