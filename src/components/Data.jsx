@@ -124,4 +124,11 @@ export const projects = [
     based: "Prishtinë",
     src: "/assets/images/amc-logo-1.webp",
   },
+  {
+    id: 4,
+    name: "No Space for Waste",
+    desc: "Philip Morris International campaing for nature.",
+    based: "Prishtinë",
+    src: "/assets/images/no-space.webp",
+  },
 ];

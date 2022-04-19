@@ -19,7 +19,7 @@ const NavLinks = () => {
           );
         })}
       </ul>
-      <div className="flex mt-2 items-center p-3">
+      <div className="flex items-center p-3">
         <FaRegEnvelope color="white" size={20} className="cursor-pointer" />
         <NavLink
           className="ml-2 text-[#a8a9b5] hover:text-white-900 font-opensans text-md font-normal cursor-pointer"
